@@ -403,6 +403,7 @@
     </div>
     </div>
   </footer>  
+  <!-- Молальное окно -->
   <div class="backdrop is-hidden "data-modal>
       <div class="modal">
           <button class="modal-button"data-modal-close>
@@ -411,6 +412,33 @@
                         </use>
                     </svg>
           </button>
+          <form class="form ">
+              <b class="form-tex" >Оставьте свои данные, мы вам перезвоним</b>
+            <div class="form-field">
+                <label for="nam" class="form-label">Имя</label>
+                <input class="form-imput" type="text" name="name" id="nam">
+            </div>
+            <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="form-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail">
+            </div>
+            <div class="form-field">
+                <label for="comment">Оставить коминтарий</label>
+                <textarea class="comment" name="comment" id="comment" cols="" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="form-field">
+                <input type="checkbox" name="polisy" id="polisy">
+                <label for="polisy">Соглашаюсь с рассылкой и принимаю </label>
+                <a href="">Условия договора</a>
+            </div>
+            <button type="submit">Отправить</button>
+
+
+          </form>
 
       </div>
 
