@@ -426,16 +426,18 @@
                 <label for="mail">Почта</label>
                 <input type="email" name="mail" id="mail">
             </div>
-            <div class="form-field">
-                <label for="comment">Оставить коминтарий</label>
-                <textarea class="comment" name="comment" id="comment" cols="" rows="10" placeholder="Введите текст"></textarea>
+            <div class="form-field ">
+                <label for="comment">Комментарий</label>
+                <textarea class="comment" name="comment" id="comment" cols="" rows="8" placeholder="Введите текст"></textarea>
             </div>
-            <div class="form-field">
-                <input type="checkbox" name="polisy" id="polisy">
-                <label for="polisy">Соглашаюсь с рассылкой и принимаю </label>
-                <a href="">Условия договора</a>
+            <div class="form-field ">
+                               
+                <label class="agreement" for="agreement">
+                    <input type="checkbox" name="agreement" id="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                
+                
             </div>
-            <button type="submit">Отправить</button>
+            <button class="submit" type="submit">Отправить</button>
 
 
           </form>
