@@ -412,31 +412,44 @@
                         </use>
                     </svg>
           </button>
-          <form class="form ">
+          <form class="form "autocomplete="off">
               <b class="form-tex" >Оставьте свои данные, мы вам перезвоним</b>
-            <div class="form-field">
-                <label for="nam" class="form-label">Имя</label>
-                <input class="form-imput" type="text" name="name" id="nam">
-            </div>
-            <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
-            </div>
-            <div class="form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
-            </div>
+            
+            <label class="form-field">
+                <span class="form-label" >Имя</span>               
+                <input class="form-imput" type="text" name="name">
+                
+               
+                    
+               
+            </label>
+                                     
+            <label class="form-field">
+                <span class="form-label">Телефон</span>
+                <input class="form-imput" type="tel" id="tel">               
+                <span class="icon"></span>
+            </label>                          
+            
+            <label class="form-field">
+                <span class="form-label">Почта</span>
+                <input class="form-imput" type="email" name="mail">
+               
+            </label>
+                
+           
             <div class="form-field ">
                 <label for="comment">Комментарий</label>
                 <textarea class="comment" name="comment" id="comment" cols="" rows="8" placeholder="Введите текст"></textarea>
             </div>
-            <div class="form-field ">
+           
                                
-                <label class="agreement" for="agreement">
-                    <input type="checkbox" name="agreement" id="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            <label class="agreement" >
+               <input type="checkbox" name="agreement" >
+                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
                 
                 
-            </div>
+            
             <button class="submit" type="submit">Отправить</button>
 
 

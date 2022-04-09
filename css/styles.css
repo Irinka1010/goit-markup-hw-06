@@ -747,9 +747,7 @@ label{
   color: var(--secondary-txt-cl);
 
 }
-label[for='polisy'] {
-  font-size: 14px;
-}
+
 .form-field label {
   margin-bottom: 4px;
 
