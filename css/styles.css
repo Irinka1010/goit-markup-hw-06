@@ -203,6 +203,8 @@ ol {
   min-width: 200px;
 
   background-color: #2196f3;
+  border: none;
+  
   color: var(--primary-dark-txt);
   font-family: var(--main-font);
   font-weight: 700;
@@ -522,6 +524,9 @@ img {
 .footer-label{
   display: flex;
 }
+.label-email{
+  margin-right: 12px;
+}
 .footer-imput{
   display: inline-block;
   width: 358px;
@@ -537,7 +542,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
   
-  margin-right: 12px;
+ 
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -555,6 +560,7 @@ input .footer-imput::placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 
 
   background: var(--accent-txt-cl);
@@ -759,10 +765,11 @@ input .footer-imput::placeholder{
 
 .modal-button {
   position: absolute;
-  left: 490px;
-  bottom: 543px;
+  right: 8px;
+  top: 8px;
   border: 0;
   padding: 0;
+  border: none;
 
   width: 30px;
   height: 30px;
@@ -794,26 +801,26 @@ input .footer-imput::placeholder{
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-txt-cl);
-  margin-bottom: 12px;
+  display: block;
+ 
   text-align: center;
+  margin-bottom: 12px;
 }
 .form-list{
   padding: 0;
+  margin-bottom: 20px;
 }
 .form-item{
   
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 10px;
+  
 }
 .form-field{
   display: flex;
   flex-direction: column;
   align-content: center;
-}
-
-.form-label{
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
@@ -822,6 +829,8 @@ input .footer-imput::placeholder{
   color: var(--secondary-txt-cl);
   margin-bottom: 4px;
 }
+
+
 .form-imput{
   position: relative;
 
@@ -873,8 +882,8 @@ input .footer-imput::placeholder{
 textarea .comment::placeholder{
   color: rgba(117, 117, 117, 0.5);
 }
-.form-item:last-child {
-  margin-bottom: 20px;
+.form-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .imput:focus + .form-icon{
@@ -888,10 +897,11 @@ textarea .comment::placeholder{
 
 }
 .agreement {
-  display: block;
+ 
  
   display: flex;
   align-items: center;
+  justify-content: center;
 
 
   font-family: var(--main-font);
@@ -952,6 +962,7 @@ textarea .comment::placeholder{
   position: absolute;
   
   
+  
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -961,35 +972,33 @@ textarea .comment::placeholder{
   overflow: hidden;
 }
 .checkbox-icon{
-  
  
-
+ 
   width: 16px;
   height: 15px;
- 
+
+  
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 2px;
+  fill: var(--accent-txt-cl);
+  
  
   
   margin-right: 7px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),background 250ms cubic-bezier(0.4, 0, 0.2, 1)
- 
-  
-}
-.checkbox-icon [href]{
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+   
 }
 
-.checkbox:checked +.checkbox-icon,
-.checkbox:focus+.checkbox-icon{
+
+.checkbox:checked +.checkbox-icon{
   border-color: #2196F3;
   background: #2196F3;
    
   background-size: contain;
   background-origin: border-box;
+  background-position: center;
 }
-.checkbox:checked +.checkbox-icon [href],.checkbox:focus +.checkbox-icon [href]{
-  opacity: 1;
+.checkbox:focus +.checkbox-icon{
+  border-color: #2196F3
 }
